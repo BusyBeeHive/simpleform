@@ -1,0 +1,15 @@
+<busybee name="base-form">
+	<template>
+		 <button id="button1" on-click="{{buttonClick}}">Submit</button>
+	</template>
+	
+	<script>
+		BusyBee("base-form",{
+			buttonClick : function(event) {	
+				alert(this.$.k.getDistributedNodes()[0].nextElementSibling.nextElementSibling.value); 
+				}
+		});
+	</script>
+</busybee>
+
+
